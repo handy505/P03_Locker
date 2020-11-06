@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">P03_Locker</string>
+    <string name="todo">TODO</string>
+    <string name="button">Button</string>
+    <string name="guess">guess</string>
+    <string name="add">+</string>
+    <string name="dec">-</string>
+
+</resources>
