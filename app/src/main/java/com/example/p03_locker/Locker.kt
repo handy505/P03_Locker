@@ -4,15 +4,14 @@ import kotlin.Boolean as KotlinBoolean
 
 class Locker {
     var locked: KotlinBoolean = false
-
     var password: Int = 0
     var password_of_user_input: Int = 0
 
     fun set_password(num: Int): kotlin.Boolean {
-        if (this.locked == false) {
+        if (!this.locked) {
             this.password = num
             return true
-        }else{
+        } else {
             return false
         }
     }
@@ -31,7 +30,12 @@ class Locker {
         }
     }
 
-    fun get_hint(): Int {
-        return this.password - this.password_of_user_input
+    fun get_diff(): Int {
+        return this.password_of_user_input - this.password
+    }
+
+    fun get_hint_whether_is_it_bigger(): kotlin.Boolean {
+        return this.get_diff() > 0
+
     }
 }

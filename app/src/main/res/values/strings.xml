@@ -5,5 +5,7 @@
     <string name="guess">guess</string>
     <string name="add">+</string>
     <string name="dec">-</string>
+    <string name="_5">5</string>
+    <string name="reset">reset</string>
 
 </resources>

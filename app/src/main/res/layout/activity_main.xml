@@ -9,11 +9,11 @@
 
     <TextView
         android:id="@+id/textview1"
-        android:layout_width="359dp"
-        android:layout_height="114dp"
+        android:layout_width="362dp"
+        android:layout_height="66dp"
         android:background="@android:color/darker_gray"
         android:gravity="center"
-        android:text="Hello World!"
+        android:text="@string/_5"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,17 +31,21 @@
 
     <Button
         android:id="@+id/guessbutton"
-        android:layout_width="356dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="132dp"
+        android:layout_width="146dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="47dp"
         android:text="@string/guess"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resetbutton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview1" />
+        app:layout_constraintTop_toBottomOf="@+id/decbutton" />
 
     <Button
         android:id="@+id/decbutton"
-        android:layout_width="169dp"
+        android:layout_width="150dp"
         android:layout_height="96dp"
         android:layout_marginTop="19dp"
         android:text="@string/dec"
@@ -53,8 +57,8 @@
 
     <Button
         android:id="@+id/addbutton"
-        android:layout_width="168dp"
-        android:layout_height="99dp"
+        android:layout_width="173dp"
+        android:layout_height="95dp"
         android:layout_marginTop="18dp"
         android:text="@string/add"
         android:textSize="36sp"
@@ -62,5 +66,17 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/decbutton"
         app:layout_constraintTop_toBottomOf="@+id/textview1" />
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="176dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guessbutton"
+        app:layout_constraintTop_toBottomOf="@+id/addbutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

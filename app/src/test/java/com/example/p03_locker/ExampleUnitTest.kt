@@ -65,14 +65,29 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun test_get_hint(){
+    fun test_get_diff(){
         var locker = Locker()
         locker.set_password(5)
         locker.lock()
         locker.unlock(4)
-        var hint: Int = locker.get_hint()
+        var hint: Int = locker.get_diff()
         assertEquals(1, hint)
+
+        locker.unlock(7)
+        assertEquals(-2, locker.get_diff())
     }
 
+    @Test
+    fun test_get_hint_whether_is_it_bigger() {
+        var locker = Locker()
+        locker.set_password(5)
+        locker.lock()
+        locker.unlock(4)
+        assertEquals(false, locker.get_hint_whether_is_it_bigger())
+
+        //locker.unlock(6)
+        //assertEquals(true, locker.get_hint_whether_is_it_bigger())
+
+    }
 
 }
