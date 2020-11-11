@@ -9,45 +9,65 @@
 
     <TextView
         android:id="@+id/textview1"
-        android:layout_width="362dp"
+        android:layout_width="512dp"
         android:layout_height="66dp"
         android:background="@android:color/darker_gray"
         android:gravity="center"
         android:text="@string/_5"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="380dp"
+        android:layout_width="512dp"
         android:layout_height="332dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="422dp"
         android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
         tools:srcCompat="@drawable/lock" />
 
     <Button
         android:id="@+id/guessbutton"
-        android:layout_width="146dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="47dp"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
         android:text="@string/guess"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/resetbutton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decbutton" />
+        app:layout_constraintTop_toBottomOf="@+id/decbutton"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="@string/add"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/decbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/decbutton"
+        app:layout_constraintTop_toTopOf="@+id/decbutton" />
 
     <Button
         android:id="@+id/decbutton"
-        android:layout_width="150dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="19dp"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
         android:text="@string/dec"
         android:textSize="36sp"
         app:layout_constraintEnd_toStartOf="@+id/addbutton"
@@ -56,27 +76,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textview1" />
 
     <Button
-        android:id="@+id/addbutton"
-        android:layout_width="173dp"
-        android:layout_height="95dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/add"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/decbutton"
-        app:layout_constraintTop_toBottomOf="@+id/textview1" />
-
-    <Button
         android:id="@+id/resetbutton"
-        android:layout_width="176dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="49dp"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
         android:text="@string/reset"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/holo_red_dark"
+        app:backgroundTint="@color/material_on_primary_emphasis_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/guessbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/guessbutton"
-        app:layout_constraintTop_toBottomOf="@+id/addbutton" />
+        app:layout_constraintTop_toTopOf="@+id/guessbutton"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
