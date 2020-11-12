@@ -24,7 +24,11 @@ class MainActivity : AppCompatActivity() {
                 R.drawable.luma,
                 R.drawable.tenten,
                 R.drawable.xiaoli,
-                R.drawable.yakult)
+                R.drawable.yakult,
+                R.drawable.laider,
+                R.drawable.princess,
+                R.drawable.peggy,
+                R.drawable.peppapig_family)
 
         val addbutton: Button = findViewById(R.id.addbutton)
         addbutton.setOnClickListener {
